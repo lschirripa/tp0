@@ -33,6 +33,10 @@ int crear_conexion(char *ip, char* puerto)
 
 	// Ahora que tenemos el socket, vamos a conectarlo
 
+	socket_cliente = socket(server_info->ai_family, 
+                    server_info->ai_socktype,
+                    server_info->ai_protocol);
+
 
 	freeaddrinfo(server_info);
 
