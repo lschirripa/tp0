@@ -24,10 +24,10 @@ SOURCE_DIRECTORY=./src
 # Test Directory
 TEST_DIRECTORY=./test
 # The main file path
-MAIN_FILE= ./src/client.c
+MAIN_FILE= ./src/server.c
 # The shared library source directory
-# LIB_DIRECTORY= ../lib/src
-# Inlcude folder
+LIB_DIRECTORY= #../lib/src
+# Include folder
 # ? Loops [includeDirectory].forEach(includeDirectory => concat("-I ", "includeDirectory"))
 INCLUDES = $(foreach dir, $(shell find $(INCLUDE_DIRECTORY) -type d -print), $(addprefix -I , $(dir)))
 # The shared library source files
