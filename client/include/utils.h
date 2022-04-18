@@ -1,5 +1,6 @@
 #ifndef UTILS_H_
 #define UTILS_H_
+#define ERR -1
 
 #include<stdio.h>
 #include<stdlib.h>
