@@ -11,8 +11,8 @@
 #include<string.h>
 #include<assert.h>
 
-#define IP "127.0.0.1"
-#define PUERTO "4444"
+#define IP "127.0.0.1" // 192.168.1.41
+#define PUERTO "4444" 
 
 typedef enum
 {
