@@ -1,7 +1,7 @@
 #include "server.h"
 
 int main(void) {
-	logger = log_create("../log/server.log", "Servidor", 1, LOG_LEVEL_TRACE);
+	logger = log_create("/home/dwt/Dev/tp0/log/server.log", "Servidor", 1, LOG_LEVEL_TRACE);
 
 	int server_fd = iniciar_servidor();
 	log_debug(logger, "Servidor listo para recibir al cliente");
