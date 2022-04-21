@@ -1,4 +1,6 @@
 #include "../include/utils.h"
+extern t_log* logger;
+
 
 
 void* serializar_paquete(t_paquete* paquete, int bytes)
@@ -35,9 +37,11 @@ int crear_conexion(char *ip, char* puerto)
 
 	// Ahora que tenemos el socket, vamos a conectarlo
 
-	if(connect(socket_cliente,server_info,server_info->ai_addrlen) == ERR){
-		printf("couldnt connect");
+	if(connect(socket_cliente,server_info->ai_addr,server_info->ai_addrlen) == ERR){
+		log_error(logger, "couldnt connect");
 		}
+
+		log_debug(logger, "se creo la conexion!");
 	
 
 

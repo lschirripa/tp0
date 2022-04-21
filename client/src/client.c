@@ -1,5 +1,7 @@
 #include "client.h"
 
+t_log* logger;
+
 int main(void)
 {
 	/*---------------------------------------------------PARTE 2-------------------------------------------------------------*/
@@ -9,7 +11,7 @@ int main(void)
 	char* puerto;
 	char* valor;
 
-	t_log* logger;
+
 	t_config* config;
 
 	/* ---------------- LOGGING ---------------- */
@@ -52,6 +54,8 @@ int main(void)
 	conexion = crear_conexion(ip, puerto);
 
 	// Enviamos al servidor el valor de CLAVE como mensaje
+
+	//enviar_mensaje(
 
 	// Armamos y enviamos el paquete
 	paquete(conexion);
